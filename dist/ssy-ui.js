@@ -54,11 +54,11 @@ const SButton = /* @__PURE__ */ defineComponent({
           border-${props2.color}-${props2.plain ? "500" : "500"}
           cursor-pointer
           border-solid
-          text-${props2.plain ? props2.color + "-500" : "white"}
+          text-${props2.plain ? `${props2.color}-500` : "white"}
           text-${size[props2.size].text}
-          hover:text-white
-          transition duration-300 ease-in-out transform hover:scale-105
-          mx-1
+          hover-text-white=""
+          transition="" duration-300="" ease-in-out="" transform="" hover-scale-105=""
+          mx-1=""
           `
     }, [props2.icon !== "" ? createVNode("i", {
       "class": `i-ic-baseline-${props2.icon} p-3`
