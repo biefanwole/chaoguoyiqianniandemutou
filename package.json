@@ -16,7 +16,7 @@
     "docs:serve": "vitepress serve docs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.5.12"

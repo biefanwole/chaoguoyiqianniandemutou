@@ -7,6 +7,12 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
+  "file.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.DS_Store": true
+
+  },
 
   "eslint.rules.customizations": [
     { "rule": "style/*", "severity": "off", "fixable": true },
