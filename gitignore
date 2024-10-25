@@ -1,0 +1,5 @@
+node_modules/
+.pnpm/
+node_modules/.pnpm/** linguist-generated
+
+node_modules/.pnpm/@algolia+autocomplete-core@1.9.3_@algolia+client-search@4.24.0_algoliasearch@4.24.0_search-insights@2.17.2/node_modules/@algolia/autocomplete-plugin-algolia-insights/dist/esm/
