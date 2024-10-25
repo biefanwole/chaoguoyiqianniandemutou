@@ -3,15 +3,18 @@
   "prettier.enable": false,
   "editor.formatOnSave": false,
 
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
-  },
-  "file.exclude": {
-    "**/.git": false,
-    "**/.svn": true,
-    "**/.DS_Store": true
-
   },
 
   "eslint.rules.customizations": [
