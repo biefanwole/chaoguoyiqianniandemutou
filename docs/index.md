@@ -1,4 +1,4 @@
- <!-- # 🔨 SSY-UI-VITE 是什么?
+ # 🔨 SSY-UI-VITE 是什么?
 
 > 一个 Mini 自制组件库，基于 Vite 技术栈，为学习前端工程化搭建的组件库。
 
@@ -35,7 +35,7 @@ import Vue from 'vue' import SSYUI from 'ssy-ui-vite' const App = { template: `
 
 扫描下方二维码加入我们
 
-![SSY](https://xxxxx.oss-cn-hangzhou.aliyuncs.com/IMG_5854.JPG)  -->
+![SSY](https://xxxxx.oss-cn-hangzhou.aliyuncs.com/IMG_5854.JPG)
 # Button 按钮
 
 常用操作按钮

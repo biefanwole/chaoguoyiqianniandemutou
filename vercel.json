@@ -4,7 +4,7 @@
   "framework": "vite",
   "installCommand": "pnpm install",
   "buildCommand": "pnpm docs:build",
-  "outputDirectory": "docs/.vitepress/dist",
+  "outputDirectory": "docs/.vitepress/pdist",
   "git": {
     "deploymentEnabled": {
       "main": true
