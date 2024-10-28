@@ -1,5 +1,5 @@
 {
-  "name": "ssy-ui-vite",
+  "name": "ssy-ui-viteml",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +7,9 @@
   "license": "ISC",
   "keywords": [],
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "dev": "vite",
@@ -17,6 +20,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
+
   },
   "dependencies": {
     "vue": "^3.5.12"
@@ -51,5 +55,9 @@
     "vitepress": "^1.4.1",
     "vitepress-theme-demoblock": "3.0.7",
     "vitest": "2.1.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
