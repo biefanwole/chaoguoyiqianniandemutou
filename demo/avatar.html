@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar组件测试</title>
+    <link rel="stylesheet" href="../dist/entry.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script src="../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../dist/Avatar/index.umd.cjs"></script>
+    <script>
+      const { createApp } = Vue
+      const { Avatar } = avatar
+
+      console.log('SSYUI:Avatar', Avatar)
+
+      createApp({
+        template: `
+        <div>
+          <h2>Avatar 组件测试</h2>
+          <div>
+            <SAvatar url="https://a.520gexing.com/uploads/allimg/2019080515/jhzvqecaiva.jpg"  />
+            <SAvatar url="https://tse3-mm.cn.bing.net/th/id/OIP-C.RNBk8y6zKvFEHYHm0MtD3gAAAA?pid=ImgDet&w=400&h=400&rs=1" />
+            <SAvatar url="https://tse4-mm.cn.bing.net/th/id/OIP-C.0n-Rz8Dcch22XNshN-t0DgAAAA?pid=ImgDet&w=400&h=400&rs=1"/>
+
+          </div>
+        </div>
+      `,
+      })
+        .use(Avatar)
+        .mount('#app')
+    </script>
+  </body>
+</html>

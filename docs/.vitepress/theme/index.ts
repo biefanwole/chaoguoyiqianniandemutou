@@ -1,5 +1,6 @@
 import Theme from 'vitepress/theme'
 import SSYUI from '../../../src/entry'
+import 'virtual:uno.css'
 
 // 主题样式
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'

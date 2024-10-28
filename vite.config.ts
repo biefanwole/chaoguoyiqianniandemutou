@@ -1,63 +1,47 @@
+/// <reference types="vitest/config" />
+import type { BuildOptions } from 'vite'
+import { resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import { defineConfig } from 'vite'
-// import legacy from '@vitejs/plugin-legacy'
-// import Unocss  from "./config/unocss";
 import UnoCSS from 'unocss/vite'
+import { defineConfig } from 'vite'
 
-// import { presetUno, presetAttributify, presetIcons } from "unocss";
-// import Unocss from "unocss/vite";
-/// <reference types="vitest/config" />
-
-const rollupOptions = {
-  external: ['vue', 'vue-router'],
+const rollupOptions: BuildOptions['rollupOptions'] = {
+  external: ['vue'], // 将这些模块保留在 bundle 之外
   output: {
     globals: {
       vue: 'Vue',
     },
+    exports: 'named',
   },
 }
-
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueJsx(),
-    UnoCSS(),
-    // Unocss({
-    //   presets: [presetUno(), presetAttributify(), presetIcons()],
-    // }),
+  plugins: [vue(), vueJsx(), UnoCSS()],
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.esm-bundler',
 
-    // legacy({
-    //   targets: ['defaults', 'not IE 11'],
-    // }),
-
-  ],
+    },
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+  },
 
   build: {
     rollupOptions,
     minify: 'terser', // boolean | 'terser' | 'esbuild'
-    sourcemap: true, // 输出单独 source文件
+    sourcemap: false, // 输出单独 source文件
     reportCompressedSize: true, // 生成压缩大小报告
     cssCodeSplit: true,
+    // 添加库模式配置
     lib: {
-      entry: './src/entry.ts',
+      entry: resolve(__dirname, 'src/entry.ts'),
       name: 'SSYUI',
       fileName: 'ssy-ui',
-      formats: ['es', 'umd', 'iife'], // 导出模块类型
-    },
-  },
-
-  test: {
-    // enable jest-like global test APIs
-    globals: true,
-    // simulate DOM with happy-dom
-    // (requires installing happy-dom as a peer dependency)
-    environment: 'happy-dom',
-  },
-
-  resolve: {
-    alias: {
-      vue: 'vue/dist/vue.esm-bundler',
+      // 导出模块格式
+      formats: ['es', 'umd'],
     },
   },
 })
