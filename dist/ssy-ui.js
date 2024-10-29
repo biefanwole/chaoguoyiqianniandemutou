@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, normalizeClass, normalizeStyle, createVNode } from "vue";
-const version = "1.0.0";
+const version = "0.2.0";
 const _hoisted_1 = ["src"];
 const _sfc_main = /* @__PURE__ */ defineComponent({
   ...{
