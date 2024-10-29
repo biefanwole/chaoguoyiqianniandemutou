@@ -10,3 +10,40 @@
 <img alt="" src="/assets/按钮.png">
 
 <img alt="GitHub License" src="https://img.shields.io/github/license/biefanwole/chaoguoyiqianniandemutou">
+
+## Features
+
+基于 Vue 框架
+
+支持 JSX 与 Vue 单文件组件
+
+Jest + Vue3 plugins 实现单元测试
+
+Eslint + Prettier + Husky 语法检查
+
+采用 Rollup 构建
+
+Vitepress + Vercel 文档网站搭建
+
+基于 Action CI 实现持续集成与交付
+
+## Install
+```bash
+npm i ssy-ui-vite
+```
+
+## Quick Start
+import Vue from 'vue'
+import SSYUI from 'ssy-ui'
+
+const App = {
+  template: `<SButton color="blue">主要按钮</SButton>`,
+};
+
+createApp(App)
+.use(SSYUI)
+.mount("#app");
+```
+
+## Quick Start
+如果希望尽快上手 ，可以访问[Getting Started](https://ssy-ui-vite.vercel.app/)
