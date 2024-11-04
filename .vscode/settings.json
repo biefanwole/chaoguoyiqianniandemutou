@@ -13,8 +13,8 @@
   },
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "explicit"
   },
 
   "eslint.rules.customizations": [

@@ -4,14 +4,16 @@
     "jsxImportSource": "vue",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    // "moduleResolution": "Bundler",
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+
   },
   "include": ["./**/*.*", "./shims-vue.d.ts"],
   "exclude": ["node_modules", "**/.*/"]
