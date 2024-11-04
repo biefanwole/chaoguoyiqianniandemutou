@@ -1,4 +1,4 @@
-<!-- <script lang="ts">
+<script lang="ts">
 export default {
   name: 'SFCButton',
 }
@@ -6,4 +6,4 @@ export default {
 
 <template>
   <button>SFC Button</button>
-</template> -->
+</template>

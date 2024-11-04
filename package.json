@@ -37,7 +37,8 @@
     "build": "vitepress build docs --outDir pdist",
     "typecheck": "vue-tsc --noEmit",
     "type:build": "vue-tsc -b --declaration --emitDeclarationOnly tsconfig.types.json",
-    "clean:dist": "rimraf dist"
+    "clean:dist": "rimraf dist",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@antfu/eslint-config": "^3.8.0",
@@ -59,6 +60,8 @@
     "@types/fs-extra": "^11.0.4",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vitest/coverage-istanbul": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.4",
     "@vue/test-utils": "2.4.6",
     "cz-customizable": "^7.2.1",
     "fs-extra": "^11.2.0",
@@ -70,7 +73,7 @@
     "vite": "^5.4.10",
     "vitepress": "^1.4.1",
     "vitepress-theme-demoblock": "3.0.7",
-    "vitest": "2.1.2",
+    "vitest": "2.1.4",
     "vue-tsc": "^2.1.8"
   },
   "config": {
