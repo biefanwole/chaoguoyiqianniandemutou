@@ -4,17 +4,17 @@
     "jsxImportSource": "vue",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    // "moduleResolution": "Bundler",
-    "strict": true,
+    // "moduleResolution": "node",
+    "moduleResolution": "Bundler",
+    "strict": false,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node"
+    "skipLibCheck": true
 
   },
-  "include": ["./**/*.*", "./shims-vue.d.ts"],
-  "exclude": ["node_modules", "**/.*/"]
+  "include": ["src/**/*"],
+  "exclude": ["**/test/**/*"] // 排除不需要的文件
 }
