@@ -1,9 +1,9 @@
 {
-  "name": "@xuanrushi/ssy-ui-vite",
+  "name": "@biefanwole/ssy-ui-vite",
   "type": "module",
   "version": "0.2.0",
   "description": "",
-  "author": "xuanrushi",
+  "author": "biefanwole",
   "license": "ISC",
   "homepage": "https://ssy-ui-vite.vercel.app/",
   "keywords": [],
