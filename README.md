@@ -9,7 +9,7 @@
 <p align="center">
   基于 Vite 栈的前端工程化实践
 </p>
-<img alt="GitHub License" src="https://img.shields.io/github/license/biefanwole/chaoguoyiqianniandemutou">
-<a href="https://codecov.io/github/biefanwole/chaoguoyiqianniandemutou" > 
+<img alt="GitHub License" src="https://img.shields.io/github/license/biefanwole/chaoguoyiqianniandemutou"><a href="https://codecov.io/github/biefanwole/chaoguoyiqianniandemutou" > 
  <img src="https://codecov.io/github/biefanwole/chaoguoyiqianniandemutou/graph/badge.svg?token=MCOW2H0JZT"/> 
  </a>
+
